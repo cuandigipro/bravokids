@@ -1,0 +1,57 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    /* Warna latar belakang cerah */
+    background-color: #f1f5f9; /* slate-100 */
+}
+::-webkit-scrollbar {
+    width: 8px;
+}
+::-webkit-scrollbar-track {
+    background: #cbd5e1; /* slate-300 */
+}
+::-webkit-scrollbar-thumb {
+    background: #f59e0b; /* amber-500 */
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+    background: #fca5a5; /* red-300 */
+}
+/* Style baru untuk video aktif: lebih ceria */
+.active-video {
+    /* Gradien warna cerah */
+    background-image: linear-gradient(to right, #f97316, #f59e0b) !important;
+    color: white !important;
+    border-left: 4px solid #fbbf24;
+    border-radius: 8px; /* Sudut lebih lembut */
+}
+.main-container {
+    height: 100vh;
+    max-height: 100vh;
+}
+
+/* **PERUBAHAN:** Animasi untuk teks logo "BRAVO KIDS TV" */
+.logo-text {
+    font-family: 'Fredoka One', cursive;
+    font-size: 3.5rem;
+    text-align: center;
+}
+.logo-text span {
+    display: inline-block;
+    transition: all 0.3s ease;
+    transform: translateY(0);
+}
+@keyframes wavy {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+}
+.wavy-char {
+    animation: wavy 1.6s ease-in-out infinite;
+}
+
+@keyframes pulse {
+    0%, 100% { transform: scale(1); box-shadow: 0 4px 6px -1px rgba(0,0,0,0.1), 0 2px 4px -1px rgba(0,0,0,0.06); }
+    50% { transform: scale(1.05); box-shadow: 0 10px 15px -3px rgba(249,115,22,0.4), 0 4px 6px -2px rgba(249,115,22,0.2); }
+}
+.button-pulse {
+    animation: pulse 2.5s infinite;
+} 
